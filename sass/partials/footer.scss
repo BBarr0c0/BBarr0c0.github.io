@@ -1,0 +1,67 @@
+/************************************
+************ FOOTER *****************
+*************************************/
+
+footer {
+	background: $bg-color-footer;
+    color: white;
+    padding: 25px 20px;
+
+	h4 {
+		font-size: 20px;
+		font-weight: 400;
+	}
+}
+
+.nav-footer {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	gap: 8px;
+
+	a {
+		color: white;
+        font-weight: 400;
+        
+		span {
+			width: 20px;
+			margin-right: 8px;
+		}
+	}
+    
+    /*pour les deux premiers <a> plus gras*/
+    li:nth-of-type(-n+2) > a {
+        font-weight: 500;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+	footer {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: flex-end;
+		height: 114px;
+
+		h4 {
+			margin: 0 60px 5px 75px;
+		}
+	}
+
+	.nav-footer {
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 5px;
+
+		li:nth-child(2) {
+			margin-right: 30px;
+		}
+
+		li:nth-child(3) {
+			margin-right: 10px;
+		}
+	}
+
+	
+}

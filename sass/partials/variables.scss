@@ -1,0 +1,37 @@
+/*************************
+******** Variables *******
+*************************/
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+
+$bg-color-primary: #F6F6F6;
+$bg-color-secondary: #FFFFFF;
+$bg-color-footer: #353535;
+
+$color-txt: #353535;
+
+$fonctionnement-icon-color: #7e7e7e;
+
+$location-txt-color: #353535;
+$location-bg-color: #EAEAEA;
+
+$new-txt-color: #008766;
+
+$btn-color: linear-gradient(
+	356deg,
+	$primary-color -11%,
+	$secondary-color 123%
+);
+
+$heart-color: linear-gradient(
+	180deg, 
+	$primary-color 0%, 
+	$secondary-color 100%
+);
+
+@mixin card {
+	border-radius: 15px;
+	box-shadow: 0px 4px 15px 0px #0000001a;
+}

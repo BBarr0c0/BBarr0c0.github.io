@@ -1,0 +1,51 @@
+/************************************
+************** HEADER ******************
+*************************************/
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+    box-shadow: 0px 2px 4px 0px #00000030;
+    position: relative; /*relative .header sert à .arrow*/
+    z-index: 1;
+    
+    .logo-header {
+        width: 200px;
+        height: 38px;
+        object-fit:contain;
+        padding-top: 10px;
+    }
+
+    .arrow {
+		position: absolute;
+		left: 0;
+        top: 0;
+        padding: 22px;
+		color: $color-txt;
+
+        span {
+            font-size: 19px;
+        }
+	}
+}
+
+
+@media (min-width: 1024px) {
+    .header {
+        height: 96px;
+        padding-bottom: 15px;
+        box-shadow: none;
+        
+        .logo-header {
+            height: 45px;
+        }
+        
+        .arrow {
+            padding: 38px;
+            bottom: 0px;
+	    }
+    }
+    
+}

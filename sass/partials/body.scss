@@ -1,0 +1,81 @@
+/****************************
+****** GENERAL / BODY *******
+****************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    object-fit : cover;
+}
+
+body {
+    background-color: $bg-color-secondary;
+}
+
+/*h1 et h2 de la homepage*/
+.tagline, .title-homepage {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*h2 de la homepage*/
+.title-homepage {
+    margin-bottom: 30px;
+}
+
+a {
+    color: black;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 50px;
+	width: 218px;
+	margin: auto;
+	background: $btn-color;
+	box-shadow: 0px 4px 10px 0px #00000040;
+    opacity: 1;
+	color: white;
+	border-radius: 25px;
+	font-weight: 500;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease, opacity 0.5s ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    box-shadow: 0px 10px 10px 0px #00000040;
+    transition: box-shadow 0.5s ease, opacity 0.5s ease;
+}
+
+.logo-header, .logo-footer {
+    font-family: 'Shrikhand', 'cursive';
+    font-weight: 400;
+}
+
+.wrapper {
+    padding: 60px 20px 50px 20px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.card {
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        max-width: 1080px;
+        margin: auto;
+    }
+}

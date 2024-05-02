@@ -1,0 +1,49 @@
+/******************
+***** LOADING *****
+******************/
+
+.loading-container {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $bg-color-primary;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 3;
+	opacity: 1;
+	animation: loading-container 0.6s ease-in-out 3s forwards;
+
+    .spoons {
+        .fa-spoon {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+
+        .fa-spoon:first-child {
+            animation: spoons-color 3s infinite ease;
+            animation-delay: 300ms;
+        }
+
+        .fa-spoon:nth-child(2) {
+            animation: spoons-color 3s infinite ease;
+            animation-delay: 600ms;
+        }
+
+        .fa-spoon:last-child {
+            animation: spoons-color 3s infinite ease;
+            animation-delay: 900ms;
+        }
+        
+    }
+
+    .loading {
+        border: 20px solid;
+        border-color: $primary-color transparent;
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+        animation: loading 1s infinite linear;
+        position: absolute;
+    }
+}
