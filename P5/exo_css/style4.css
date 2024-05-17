@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  header {
+    background-color: #8cd4b2;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  main {
+    background-color: #b5b0ba;
+    display: flex;
+  }
+  
+  aside {
+    background-color: #ba8af5;
+    flex: 1;
+  }
+  
+  main section {
+    margin: 20px;
+    flex: 3;
+  }
+  
+  aside,
+  footer {
+    border: 1px solid gray;
+  }
+  
+  header,
+  footer {
+    box-shadow: black 0 1px 5px;
+  }
+  
+  footer {
+    background-color: #c3d095;
+  }
