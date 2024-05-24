@@ -1,9 +1,33 @@
-a {
-    text-decoration: none;
-    color: black;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    margin: 30px 0 70px 0;
     text-align: center;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s;
+}
+
 a:hover {
-    color: blue;
+    transform: scale(2);
+    text-shadow: #FC0 1px 0 10px;
 }
